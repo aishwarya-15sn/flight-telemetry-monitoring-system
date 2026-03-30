@@ -1,16 +1,17 @@
 # Real-Time Flight Telemetry Monitoring System
 
-## Overview
-This project monitors aircraft telemetry data such as altitude, velocity, and position using real-time flight data sources. It processes telemetry streams, detects anomalies, and visualizes aircraft movement.
+A system that monitors aircraft telemetry data such as altitude, velocity, and geographic position using real-time aviation data sources.
+
+The system processes telemetry streams, detects anomalies, and visualizes aircraft movement.
 
 ## Features
-- Real-time flight data processing
-- Aircraft telemetry monitoring
+- Real-time flight data ingestion
+- Telemetry monitoring
 - Anomaly detection
-- Visualization of aircraft movement
+- Aircraft visualization
 
 ## Tech Stack
 Python
-Pandas
 Requests
+Pandas
 Matplotlib / Folium
