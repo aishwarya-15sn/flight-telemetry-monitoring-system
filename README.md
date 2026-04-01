@@ -69,3 +69,11 @@ Red → Detected anomalies
 - Real-time telemetry stream ingestion
 - Integration with aircraft sensor datasets
 - Alerting system for critical anomalies
+
+## Example Output
+
+Below is an example of the anomaly detection visualization produced by the system.
+
+Blue points represent normal telemetry readings, while red points indicate detected anomalies.
+
+![Telemetry Monitoring Output](assets/telemetry_output.png)
