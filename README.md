@@ -72,8 +72,6 @@ Red → Detected anomalies
 
 ## Example Output
 
-Below is an example of the anomaly detection visualization produced by the system.
+Example anomaly detection visualization from the telemetry monitoring system.
 
-Blue points represent normal telemetry readings, while red points indicate detected anomalies.
-
-![Telemetry Monitoring Output](assets/telemetry_output.png)
+![Telemetry Output](assets/telemetry_output.png)
