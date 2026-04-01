@@ -74,4 +74,4 @@ Red → Detected anomalies
 
 Example anomaly detection visualization from the telemetry monitoring system.
 
-![Telemetry Output](assets/telemetry_output.png)
+![Telemetry Output](telemetry_output.png)
