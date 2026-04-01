@@ -33,6 +33,12 @@ Anomaly Detection (Isolation Forest)
 ↓  
 Visualization of abnormal flight behavior
 
+### System Modules
+
+1. Telemetry Generator – Simulates aircraft telemetry streams  
+2. Telemetry Processor – Prepares telemetry data for analysis  
+3. Anomaly Detector – Identifies abnormal flight behaviour using Isolation Forest  
+4. Visualization Module – Highlights anomalies in flight telemetry plots
 ## Technologies Used
 
 Python  
