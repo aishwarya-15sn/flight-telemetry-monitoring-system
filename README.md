@@ -1,46 +1,65 @@
-# AeroStream – Real-Time Flight Telemetry Monitoring System
+# Flight Telemetry Monitoring System
 
-A Python-based system that simulates and processes aircraft telemetry data streams and detects abnormal flight behavior.
+A Python-based telemetry monitoring pipeline that simulates aircraft flight data and detects abnormal flight behavior using anomaly detection algorithms.
 
 ## Overview
 
-Aircraft generate continuous telemetry signals such as altitude, velocity and positional coordinates. Monitoring these parameters helps identify abnormal flight conditions early.
+Modern aircraft generate continuous telemetry streams from onboard sensors. Monitoring these signals helps identify abnormal flight conditions early.
 
-AeroStream implements a telemetry processing pipeline that:
+This project simulates a telemetry processing pipeline that:
 
-• Simulates aircraft telemetry data streams  
-• Processes altitude, velocity, temperature and position data  
-• Detects anomalies using machine learning (Isolation Forest)  
-• Visualizes abnormal flight behavior for monitoring
-
-## System Architecture
-
-Telemetry Generator  
-↓  
-Telemetry Processing Pipeline  
-↓  
-Anomaly Detection Engine  
-↓  
-Visualization Module
+• Generates synthetic aircraft telemetry data  
+• Processes altitude, velocity, temperature and positional readings  
+• Detects abnormal patterns using an Isolation Forest model  
+• Visualizes anomalies in flight telemetry  
 
 ## Telemetry Parameters
 
 The system processes the following flight parameters:
 
-- Altitude
-- Velocity
+- Altitude (ft)
+- Velocity (knots)
 - Temperature
 - Latitude
 - Longitude
 
-## Tech Stack
+## Architecture
+
+Telemetry Generator  
+↓  
+Data Processing Pipeline  
+↓  
+Anomaly Detection (Isolation Forest)  
+↓  
+Visualization of abnormal flight behavior
+
+## Technologies Used
 
 Python  
 Pandas  
 NumPy  
 Scikit-learn  
-Matplotlib  
+Matplotlib
 
-## Running the System
+## How to Run
 
 Install dependencies:
+
+pip install -r requirements.txt
+
+Run the telemetry monitoring pipeline:
+
+python src/run_pipeline.py
+
+## Output
+
+The system detects abnormal telemetry readings and visualizes them:
+
+Blue → Normal telemetry  
+Red → Detected anomalies
+
+## Future Improvements
+
+- Real-time telemetry stream ingestion
+- Integration with aircraft sensor datasets
+- Alerting system for critical anomalies
