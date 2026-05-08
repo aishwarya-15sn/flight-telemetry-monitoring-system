@@ -4,7 +4,7 @@ from sklearn.ensemble import IsolationForest
 def detect_anomalies(df):
     print("running anomaly detection...")
     features = df[["altitude", "velocity", "temperature", "latitude", "longitude"]]
-    model = IsolationForest(contamination=0.02, random_state=42)
+    model = IsolationForest(contamination=0.02, random_state=42) # contamination=0.02 assumes roughly 2% abnormal telemetry points
     model.fit(features)
     preds = model.predict(features)
     df["anomaly"] = preds
